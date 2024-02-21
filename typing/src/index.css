@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  width: 90vw;
+  height: 90vh;
 }
 
 code {
@@ -39,5 +42,33 @@ textarea{
   height: 30vh;
   overflow-x: hidden; /* Hide horizontal overflow */
   border: 1px solid #ccc;
+<<<<<<< HEAD
   color: black;
+=======
+}
+
+.left{
+ display: flex; 
+ flex-direction: column;
+ gap: 30px;
+ margin-left: 5rem;
+ margin-top: 5rem;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+ justify-content: space-between;
+}
+
+.btn{
+  background-color: blueviolet;
+>>>>>>> bd271acfe7d97e986b3c42a5be579c91cbe0df91
 }
