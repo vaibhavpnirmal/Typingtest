@@ -49,6 +49,16 @@ let keydown=0;
             console.log(e.key)
         if(e.key==="Backspace"){
             setback(()=> back+1)
+            settypekey(()=>{
+
+                if(typedkey>0){
+                        return (typedkey-1)}
+                    
+                })
+                
+                
+                   
+
 
         }
 
@@ -62,22 +72,29 @@ let keydown=0;
     
     
   return (
-    <div>
-      <div className='para'>
+    <div className='container'>
+        <div className='left'>
+              <div className='para'>
 <p id='one'> {v}
+    
+</p>
+      </div>
+      
+      <div><textarea  className='userpara'  onChange={handelchange} onKeyDown={key}  >
+        </textarea></div>
+        
+        <button className='btn'>result</button>
+        
+        </div>
     
 
 
-</p>
-      </div>
-
-<div><textarea  className='userpara'  onChange={handelchange} onKeyDown={key}  ></textarea></div>
      
         
 
-
-
-<div className='result'>
+<div className='right'>
+    
+    <div className='result'>
         <h1>Result </h1>
         <h3>total words:{arrayofstring.length}</h3>
         <h3>keydown:- {typedkey}</h3>
@@ -88,6 +105,10 @@ let keydown=0;
         
 
       </div>
+      
+      </div>
+
+
       </div>
 
   )
