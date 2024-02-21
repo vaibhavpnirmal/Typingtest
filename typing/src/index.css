@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.para{
+  max-width: 50vw;
+  height: 30vh;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  border: 1px solid #ccc;
+  
+}
+p{
+  max-width: 50vw;
+  overflow-x: hidden;
+  
+}
+.userpara{
+  width: 50vw;
+  height: 30vh ;
+
+  border: 2px solid black;
+  overflow: auto;
+}
+
+textarea{
+  max-width: 50vw;
+  height: 30vh;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  border: 1px solid #ccc;
+}
