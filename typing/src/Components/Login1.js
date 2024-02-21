@@ -7,29 +7,27 @@ import { FaLock } from "react-icons/fa6";
 
 export default function Login1() {
 
-  const showKeyboard=()=>{
+  // const showKeyboard=()=>{
 
+  //   return<>
+  //   <div className="keyboard">
+  //     <div className="keyboardcontainer">
+  //       <div className="container">
+  //         <div className="row">
+  //           {['~.`', '!.1','@.2','#.3','$.4','%.5','^.6','&.7','*.8','(.9',').0','_.-', '+.=',  
+  //             '<i className="fa-solid fa-delete-left"></i>']}
 
+  //         </div>
 
-    return<>
-    <div className="keyboard">
-      <div className="keyboardcontainer">
-        <div className="container">
-          <div className="row">
-            {['~.`', '!.1','@.2','#.3','$.4','%.5','^.6','&.7','*.8','(.9',').0','_.-', '+.=',  
-              '<i className="fa-solid fa-delete-left"></i>']}
+  //       </div>
 
-          </div>
+  //     </div>
 
-        </div>
+  //   </div>
 
-      </div>
+  //   </>
 
-    </div>
-
-    </>
-
-  }
+  // }
   return (
     <div>
       <div className="bluediv"></div>
@@ -59,7 +57,7 @@ export default function Login1() {
           <div className="logintext">
             <p>Login</p>
           </div>
-          <div className="userinput"><FaUser/><input></input><button onClick={showKeyboard}><MdKeyboard/></button></div><br></br>
+          <div className="userinput"><FaUser/><input></input><button ><MdKeyboard/></button></div><br></br>
           <div className="password"><FaLock/><input></input><button><MdKeyboard/></button></div><br></br>       
            <button id="btn">Sign In</button>
           </div>
