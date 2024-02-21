@@ -1,0 +1,45 @@
+
+.main-container{
+  /* display: flex; */
+  margin-left: 0px;
+}
+.text-header{
+  background-color: gray;
+  text-align: left;
+  margin-left: 20px;
+  display: flex;
+ 
+}
+
+.text-header h1{
+  color: yellow;
+}
+.text-header h2, p{
+  color: white;
+  
+}
+.text-header  p{
+  color: white;
+  font-size: 10px;
+  
+    
+  }
+  
+.img-div{
+width: 200px;
+height: 200px;
+}
+.login-div{
+  width: 400px;
+  margin-left: 200px;
+
+  background-color: lightgray;
+}
+.container-down{
+  justify-content: center;
+  align-items: center;
+}
+#btn{
+  background-color: lightblue;
+  width: 150px;
+}
