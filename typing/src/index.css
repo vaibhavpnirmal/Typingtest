@@ -42,9 +42,6 @@ textarea{
   height: 30vh;
   overflow-x: hidden; /* Hide horizontal overflow */
   border: 1px solid #ccc;
-<<<<<<< HEAD
-  color: black;
-=======
 }
 
 .left{
@@ -70,5 +67,4 @@ textarea{
 
 .btn{
   background-color: blueviolet;
->>>>>>> bd271acfe7d97e986b3c42a5be579c91cbe0df91
 }

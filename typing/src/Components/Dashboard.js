@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import arrayofstring from "./data";
 import { v } from "./data";
 
- export const Dashboard = () => {
+  const Dashboard = () => {
   const [userInput, setUserInput] = useState("");
   let [correct, setcorrect] = useState(0);
   const [typedkey, settypekey] = useState(0);
@@ -104,3 +104,4 @@ import { v } from "./data";
 
 
  }
+export default Dashboard
