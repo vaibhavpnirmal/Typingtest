@@ -24,9 +24,10 @@ code {
   color: black;
   
 }
-p{
+.para p{
   max-width: 50vw;
   overflow-x: hidden;
+  color: black;
   
 }
 .userpara{
@@ -42,33 +43,18 @@ textarea{
   height: 30vh;
   overflow-x: hidden; /* Hide horizontal overflow */
   border: 1px solid #ccc;
-<<<<<<< HEAD
   color: black;
-=======
 }
-
-.left{
- display: flex; 
- flex-direction: column;
- gap: 30px;
- margin-left: 5rem;
- margin-top: 5rem;
-}
-
 .container{
   display: grid;
-  grid-template-columns: 6fr 2fr;
-  justify-content: space-between;
-  gap: 10rem;
+  grid-template-columns: 5fr 3fr;
 }
-
 .right{
+  margin-left: 5rem;
+}
+.left{
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
- justify-content: space-between;
-}
-
-.btn{
-  background-color: blueviolet;
->>>>>>> bd271acfe7d97e986b3c42a5be579c91cbe0df91
+  gap: 2rem;
 }
