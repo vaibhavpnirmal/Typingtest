@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import arrayofstring from "./data";
-import { v } from "./data";
+import { v} from "./data";
 
   const Dashboard = () => {
+    const [showresult,setshow]=useState(false)
   const [userInput, setUserInput] = useState("");
   let [correct, setcorrect] = useState(0);
   const [typedkey, settypekey] = useState(0);
@@ -24,7 +25,8 @@ import { v } from "./data";
         wrong++;
       }
     });
-
+setcorrect(count)
+setincorrect(wrong)
       }
       const key=(e)=>{
         settypekey(()=>{
@@ -41,9 +43,14 @@ import { v } from "./data";
                 
               }
             }
-                   
+                  
+            const show=()=>{
+              setshow(!showresult)
+            }
 
+const changepara=()=>{
 
+}
   return (
     <div className='container'>
         <div className='left'>
@@ -56,16 +63,16 @@ import { v } from "./data";
       <div><textarea  className='userpara'  onChange={handelchange} onKeyDown={key}  >
         </textarea></div>
         
-        <button className='btn'>result</button>
+        <button className='btn'onClick={show}>result</button>
+
+        <button onClick={changepara} >change para</button>
         
         </div>
     
 
 
      
-        
-
-<div className='right'>
+   { showresult && <div className='right'>
     
     <div className='result'>
         <h1>Result </h1>
@@ -79,7 +86,9 @@ import { v } from "./data";
 
       </div>
       
-      </div>
+      </div>}     
+
+
 
 
       </div>
